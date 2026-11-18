@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WIND &amp; DESIGN FESTIVAL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700;1,800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<!-- ========== HEADER + 2. HAMBURGER MENU ========== -->
+<header class="hdr" id="hdr">
+  <div class="hdr__bar glass">
+    <a class="logo" href="#top" aria-label="WIND &amp; DESIGN FESTIVAL トップへ">
+      <svg viewBox="0 0 52 34" aria-hidden="true"><path d="M3 28 L17 8 L25 19 L32 11 L47 28" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 31 Q15 24 26 31 T48 31" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span>Wind &amp; Design<br>Festival</span>
+    </a>
+    <nav class="gnav" aria-label="メインナビゲーション">
+      <a href="#top">About</a>
+      <a href="#lineup">Lineup</a>
+      <a href="#venues">Design Expo</a>
+      <a href="#venues">Area Map</a>
+      <a href="#faq">Tickets &amp; Access</a>
+      <a href="#news">News</a>
+    </nav>
+    <div class="hdr__right">
+      <p class="lang" aria-label="言語"><span aria-current="true">JP</span> / <span>EN</span></p>
+      <button class="btn btn--header" type="button" data-modal-open="ticket">Tickets <span class="arr" aria-hidden="true">→</span></button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" inert>
+  <ul class="drawer__list">
+    <li style="--n:0"><a href="#top">About <small>フェスについて</small></a></li>
+    <li style="--n:1"><a href="#lineup">Lineup <small>出演アーティスト</small></a></li>
+    <li style="--n:2"><a href="#venues">Design Expo <small>デザインエキスポ</small></a></li>
+    <li style="--n:3"><a href="#venues">Area Map <small>エリアマップ</small></a></li>
+    <li style="--n:4"><a href="#faq">Tickets &amp; Access <small>チケット・アクセス</small></a></li>
+    <li style="--n:5"><a href="#news">News <small>お知らせ</small></a></li>
+  </ul>
+  <div class="drawer__cta"><button class="btn" type="button" data-modal-open="ticket">チケットを購入する <span class="arr" aria-hidden="true">→</span></button></div>
+</div>
+
+<main id="main">
+
+<!-- ========== HERO + 3. PARALLAX + 1. MOTION TYPOGRAPHY ========== -->
+<section class="hero" id="top" data-parallax-root="top" aria-label="WIND &amp; DESIGN FESTIVAL">
+  <!-- 画像はすべて <img>。src を差し替えるだけで入れ替えできます -->
+  <div class="layer layer--sky" data-speed="0.30"><img src="images/hero-sky.png" alt=""></div>
+  <div class="layer layer--mount" data-speed="0.20"><img src="images/hero-mountains.svg" alt=""></div>
+  <div class="layer layer--ferris" data-speed="0.14">
+    <img class="ferris__stand" src="images/hero-ferris-stand.svg" alt="">
+    <img class="ferris__wheel" src="images/hero-ferris-wheel.svg" alt="">
+  </div>
+  <div class="layer layer--balloons" data-speed="-0.14">
+    <img class="balloon balloon--1" src="images/balloon-1.svg" alt="">
+    <img class="balloon balloon--2" src="images/balloon-2.svg" alt="">
+    <img class="balloon balloon--3" src="images/balloon-3.svg" alt="">
+    <img class="balloon balloon--4" src="images/balloon-2.svg" alt="">
+  </div>
+  <div class="layer layer--stage" data-speed="0.05"><img src="images/hero-stage.png" alt=""></div>
+
+  <div class="wrap hero__content">
+    <div class="hero__grid">
+      <h1 class="hero__title" data-split="load" aria-label="WIND &amp; DESIGN FESTIVAL">
+        <span class="ln">WIND &amp;</span><span class="ln">DESIGN</span><span class="ln">FESTIVAL</span>
+      </h1>
+      <div class="hero__tag">
+        <p class="hero__eyebrow" data-split="load" style="--d:500ms" aria-label="Music × Design × Nature"><span class="ln">Music × Design</span><span class="ln">× Nature</span></p>
+        <p class="hero__lead" data-split="load" style="--d:800ms" aria-label="風とデザインが交差する、2日間。"><span class="ln">風とデザインが交差する、</span><span class="ln">2日間。</span></p>
+      </div>
+      <div class="hero__meta">
+        <p class="hero__date"><span class="num">2026.7.18</span><span class="dow">SAT</span><span class="dash">—</span><span class="num">19</span><span class="dow">SUN</span></p>
+        <p class="hero__place"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>高原の森 特設会場</p>
+        <button class="btn" type="button" data-modal-open="ticket">チケットを購入する <span class="arr" aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="rail glass" aria-label="SNS">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+    <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X"><svg class="ico" viewBox="0 0 24 24"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.8-6.3L5.4 21H2.3l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/></svg></a>
+    <span class="rail__line" aria-hidden="true"></span>
+  </aside>
+</section>
+
+<div class="main-bg">
+  <img class="deco deco--l" src="images/foliage.png" alt="">
+  <img class="deco deco--r" src="images/foliage.png" alt="">
+
+  <!-- ========== 4. SLIDESHOW ========== -->
+  <section class="venues wrap" id="venues" aria-labelledby="venues-h">
+    <h2 class="visually-hidden" id="venues-h">開催エリア</h2>
+    <div class="ss glass" data-slideshow role="group" aria-roledescription="carousel" aria-label="開催エリア">
+      <button class="ss__arrow ss__arrow--prev" type="button" aria-label="前のエリア"><svg class="ico" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="ss__viewport">
+        <div class="ss__track">
+          <article class="slide" aria-roledescription="slide">
+            <button class="slide__btn" type="button" data-modal-open="detail" data-title="TOKYO" data-meta="2026.7.18 SAT – 19 SUN" data-place="東京・夢の森公園" data-desc="都市の真ん中で、風と音とデザインが交差する一日。公園全体を使ったインスタレーションとライブステージを楽しめます。">
+              <img src="images/venue-tokyo.png" alt="">
+              <span class="slide__txt"><strong>TOKYO</strong><span class="slide__date">2026.7.18 SAT – 19 SUN</span><span class="slide__place"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>東京・夢の森公園</span></span>
+            </button>
+          </article>
+          <article class="slide" aria-roledescription="slide">
+            <button class="slide__btn" type="button" data-modal-open="detail" data-title="OSAKA" data-meta="2026.7.18 SAT – 19 SUN" data-place="大阪・空の丘広場" data-desc="空の広い丘で、夕暮れとともに音楽が始まります。地元クリエイターによるデザインマーケットも同時開催。">
+              <img src="images/venue-osaka.png" alt="">
+              <span class="slide__txt"><strong>OSAKA</strong><span class="slide__date">2026.7.18 SAT – 19 SUN</span><span class="slide__place"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>大阪・空の丘広場</span></span>
+            </button>
+          </article>
+          <article class="slide" aria-roledescription="slide">
+            <button class="slide__btn" type="button" data-modal-open="detail" data-title="NAGOYA" data-meta="2026.7.25 SAT – 26 SUN" data-place="名古屋・風見ヶ丘" data-desc="木漏れ日のなかで過ごす、ゆったりとしたフェス。ワークショップやフードエリアが充実しています。">
+              <img src="images/venue-nagoya.png" alt="">
+              <span class="slide__txt"><strong>NAGOYA</strong><span class="slide__date">2026.7.25 SAT – 26 SUN</span><span class="slide__place"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>名古屋・風見ヶ丘</span></span>
+            </button>
+          </article>
+          <article class="slide" aria-roledescription="slide">
+            <button class="slide__btn" type="button" data-modal-open="detail" data-title="FUKUOKA" data-meta="2026.8.1 SAT – 2 SUN" data-place="福岡・海風ヒルズ" data-desc="海風を感じる丘陵地で、サンセットステージを開催。夜は光と音のショーでクライマックスを迎えます。">
+              <img src="images/venue-fukuoka.png" alt="">
+              <span class="slide__txt"><strong>FUKUOKA</strong><span class="slide__date">2026.8.1 SAT – 2 SUN</span><span class="slide__place"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>福岡・海風ヒルズ</span></span>
+            </button>
+          </article>
+          <article class="slide" aria-roledescription="slide">
+            <button class="slide__btn" type="button" data-modal-open="detail" data-title="SAPPORO" data-meta="2026.8.8 SAT – 9 SUN" data-place="札幌・白樺パーク" data-desc="白樺に囲まれたパークで、涼しい夏の夜を。アコースティックを中心にじっくり聴かせるラインナップです。">
+              <img src="images/venue-sapporo.png" alt="">
+              <span class="slide__txt"><strong>SAPPORO</strong><span class="slide__date">2026.8.8 SAT – 9 SUN</span><span class="slide__place"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>札幌・白樺パーク</span></span>
+            </button>
+          </article>
+        </div>
+      </div>
+      <button class="ss__arrow ss__arrow--next" type="button" aria-label="次のエリア"><svg class="ico" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="ss__dots" role="group" aria-label="スライドを選ぶ"></div>
+    </div>
+  </section>
+
+  <!-- ========== LINEUP (card → 5. MODAL) ========== -->
+  <section class="lineup wrap" id="lineup" aria-labelledby="lineup-h">
+    <div class="lineup__intro">
+      <h2 class="sec-title" id="lineup-h" data-split="view" aria-label="LINEUP">LINEUP</h2>
+      <p>豪華アーティストが集結。<br>最高の音楽で、<br>特別な2日間を。</p>
+      <button class="btn btn--sm" type="button" data-modal-open="detail" data-template="tpl-artists" data-title="LINEUP" data-meta="2026.7.18 SAT – 19 SUN" data-desc="2つのステージに、ジャンルを越えたアーティストが集まります。">出演アーティスト一覧 <span class="arr" aria-hidden="true">→</span></button>
+    </div>
+    <button class="stage" type="button" data-modal-open="detail" data-title="GREEN STAGE" data-meta="森のなかの、静かに熱いステージ" data-desc="木々に囲まれたステージ。歌声とアコースティックを中心に、風の音まで届く距離で聴けます。" data-list="Haruka Mizuno|KAZE-NO-KO|Sōta Ishikawa|The Greenroom Club">
+      <img src="images/stage-green.png" alt="">
+      <span class="stage__chip stage__chip--green"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4C10 4 4 9 4 16c0 1.5.3 3 1 4 1-4 4-8 9-10-4 3-6 6-7 10 7 0 13-5 13-16z"/></svg>Green Stage</span>
+    </button>
+    <button class="stage" type="button" data-modal-open="detail" data-title="ORANGE STAGE" data-meta="夕陽と一緒に盛り上がるステージ" data-desc="ギターとビートが響くサンセットステージ。日没の時間帯にあわせて、いちばん熱い演奏が続きます。" data-list="Rin Kuroda|SUNSET PARADE|Toma &amp; the Firefly|YUZU">
+      <img src="images/stage-orange.png" alt="">
+      <span class="stage__chip stage__chip--orange"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></g></svg>Orange Stage</span>
+    </button>
+  </section>
+
+  <!-- ========== SPONSORS ========== -->
+  <section class="sponsors wrap" id="sponsors" aria-labelledby="sponsors-h">
+    <div class="sponsors__intro">
+      <h2 class="sec-title sec-title--sm" id="sponsors-h" data-split="view" aria-label="SPONSORS">SPONSORS</h2>
+      <p>このイベントを支える<br>パートナーの皆様</p>
+      <button class="btn btn--xs" type="button" data-modal-open="detail" data-template="tpl-sponsors" data-title="SPONSORS" data-meta="OFFICIAL PARTNERS" data-desc="WIND &amp; DESIGN FESTIVAL を支えてくださるパートナーの皆様です。">スポンサー一覧 <span class="arr" aria-hidden="true">→</span></button>
+    </div>
+    <ul class="sponsors__panel">
+      <li><img src="images/sponsor-1.svg" alt="SUNRISE"></li>
+      <li><img src="images/sponsor-2.svg" alt="Coral &amp; Co."></li>
+      <li><img src="images/sponsor-3.svg" alt="Panora"></li>
+      <li><img src="images/sponsor-4.svg" alt="NOVA"></li>
+      <li><img src="images/sponsor-5.svg" alt="TERRA"></li>
+      <li><img src="images/sponsor-6.svg" alt="MERIDIAN"></li>
+    </ul>
+  </section>
+
+  <!-- ========== PLAYLIST ========== -->
+  <section class="wrap" aria-label="公式プレイリスト">
+    <a class="playlist glass" href="https://open.spotify.com/" target="_blank" rel="noopener">
+      <span class="playlist__brand"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 9.6c3.6-1 7.4-.7 10.4 1M7.6 12.6c3-.8 6-.5 8.6.9M8.3 15.4c2.4-.6 4.6-.3 6.6.7" fill="none" stroke="#3b2a86" stroke-width="1.9" stroke-linecap="round"/></svg>Spotify</span>
+      <span class="playlist__text"><strong>フェスのプレイリストをチェック！</strong><small>WIND &amp; DESIGN FESTIVAL 公式プレイリスト</small></span>
+      <span class="playlist__play" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M9 6.5v11l9-5.5z" fill="currentColor"/></svg></span>
+      <span class="wave" aria-hidden="true"></span>
+      <img class="playlist__cover" src="images/venue-tokyo.png" alt="">
+    </a>
+  </section>
+
+  <!-- ========== NEWS / FAQ + 6. ACCORDION ========== -->
+  <section class="info wrap" id="info" aria-label="お知らせとよくある質問">
+    <div class="info__grid">
+      <div class="panel glass" id="news">
+        <h2 class="sec-title sec-title--sm" data-split="view" aria-label="NEWS">NEWS</h2>
+        <ul class="news">
+          <li><button type="button" data-modal-open="detail" data-title="第2弾出演アーティストを発表しました" data-meta="2026.06.20 / ARTIST" data-desc="GREEN STAGE と ORANGE STAGE の追加出演者を発表しました。詳細は出演アーティスト一覧をご覧ください。"><time datetime="2026-06-20">2026.06.20</time><span class="tag">Artist</span><span class="news__title">第2弾出演アーティストを発表しました</span></button></li>
+          <li><button type="button" data-modal-open="detail" data-title="DESIGN EXPO の出展者を公開しました" data-meta="2026.06.05 / EXPO" data-desc="会場内に並ぶデザインブースの出展者を公開しました。プロダクト、グラフィック、空間デザインなど幅広いジャンルが集まります。"><time datetime="2026-06-05">2026.06.05</time><span class="tag">Expo</span><span class="news__title">DESIGN EXPO の出展者を公開しました</span></button></li>
+          <li><button type="button" data-modal-open="detail" data-title="シャトルバスの運行情報を更新しました" data-meta="2026.05.28 / ACCESS" data-desc="最寄り駅から会場までのシャトルバスの時刻表を更新しました。混雑を避けるため、早めの時間帯のご利用をおすすめします。"><time datetime="2026-05-28">2026.05.28</time><span class="tag">Access</span><span class="news__title">シャトルバスの運行情報を更新しました</span></button></li>
+        </ul>
+      </div>
+      <div class="panel glass" id="faq">
+        <h2 class="sec-title sec-title--sm" data-split="view" aria-label="FAQ">FAQ</h2>
+        <div class="acc" data-accordion data-single>
+          <div class="acc__item">
+            <h3><button class="acc__btn" type="button" id="acc-b1" aria-expanded="true" aria-controls="acc-p1">チケットはどこで購入できますか？<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel is-open" id="acc-p1" role="region" aria-labelledby="acc-b1"><div class="acc__inner"><p>画面右上の「TICKETS」ボタンから、日程と枚数を選んでお申し込みください。販売開始日は、お知らせでご案内します。</p></div></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" type="button" id="acc-b2" aria-expanded="false" aria-controls="acc-p2">雨の日でも開催されますか？<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="acc-p2" role="region" aria-labelledby="acc-b2"><div class="acc__inner"><p>小雨の場合は開催します。荒天で安全が確保できない場合は中止または短縮となり、公式サイトとSNSでお知らせします。</p></div></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" type="button" id="acc-b3" aria-expanded="false" aria-controls="acc-p3">持ち物や服装のおすすめはありますか？<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="acc-p3" role="region" aria-labelledby="acc-b3"><div class="acc__inner"><p>高原は日中の日差しが強く、夜は冷え込みます。帽子、日焼け止め、羽織れる上着、歩きやすい靴をご用意ください。レインウェアもおすすめです。</p></div></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" type="button" id="acc-b4" aria-expanded="false" aria-controls="acc-p4">会場へのアクセスを教えてください<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="acc-p4" role="region" aria-labelledby="acc-b4"><div class="acc__inner"><p>最寄り駅から会場までシャトルバスを運行します。駐車場は台数に限りがあるため、公共交通機関でのご来場をおすすめします。</p></div></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" type="button" id="acc-b5" aria-expanded="false" aria-controls="acc-p5">子どもも入場できますか？<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="acc-p5" role="region" aria-labelledby="acc-b5"><div class="acc__inner"><p>未就学のお子様は保護者同伴で入場できます。会場内にはキッズスペースと授乳室を設けます。耳を守るイヤーマフの貸し出しもあります。</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- marquee: scroll speed drives the type -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track"><span>WIND &amp; DESIGN FESTIVAL</span><i>✦</i><span>2026.7.18 SAT — 19 SUN</span><i>✦</i><span>MUSIC × DESIGN × NATURE</span><i>✦</i></div>
+  </div>
+</div>
+</main>
+
+<footer class="footer" data-parallax-root="bottom">
+  <div class="wrap footer__inner">
+    <p class="footer__logo">WIND &amp; DESIGN<br>FESTIVAL</p>
+    <nav class="footer__nav" aria-label="フッター">
+      <a href="#news">News</a>
+      <a href="#faq">FAQ</a>
+      <button type="button" data-modal-open="detail" data-title="RULES" data-meta="入場規約" data-desc="会場内では周囲の方への配慮をお願いします。危険物の持ち込み、ごみの放置、指定エリア以外での喫煙は禁止です。詳細な入場規約は公式サイトをご確認ください。">Rules</button>
+      <button type="button" data-modal-open="detail" data-title="CONTACT" data-meta="お問い合わせ" data-desc="お問い合わせは、次のメールアドレスまでお送りください。 info@example.com">Contact</button>
+    </nav>
+    <div class="footer__sns">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+      <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X"><svg class="ico" viewBox="0 0 24 24"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.8-6.3L5.4 21H2.3l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/></svg></a>
+    </div>
+    <small class="footer__copy">© 2026 WIND &amp; DESIGN FESTIVAL. All Rights Reserved.</small>
+  </div>
+</footer>
+
+<!-- ========== 5. MODAL WINDOWS ========== -->
+<div class="modal" id="modal-ticket" role="dialog" aria-modal="true" aria-labelledby="mt-title" inert>
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__panel" tabindex="-1">
+    <button class="modal__close" type="button" data-modal-close aria-label="閉じる"><svg class="ico" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+    <div class="ticket">
+      <p class="eyebrow">2026.7.18 SAT — 19 SUN</p>
+      <h2 class="modal__title" id="mt-title">TICKETS</h2>
+      <form id="ticket-form" novalidate>
+        <fieldset class="plans">
+          <legend>チケットを選ぶ</legend>
+          <label class="plan"><input type="radio" name="plan" value="day1" data-price="12000" data-label="1日券（7.18 SAT）" checked><span class="plan__card"><b>1日券</b><small>7.18 SAT</small><em>¥12,000</em></span></label>
+          <label class="plan"><input type="radio" name="plan" value="day2" data-price="12000" data-label="1日券（7.19 SUN）"><span class="plan__card"><b>1日券</b><small>7.19 SUN</small><em>¥12,000</em></span></label>
+          <label class="plan"><input type="radio" name="plan" value="both" data-price="21000" data-label="2日通し券"><span class="plan__card"><b>2日通し券</b><small>7.18 – 19</small><em>¥21,000</em></span></label>
+        </fieldset>
+        <div class="ticket__row">
+          <div class="qty" role="group" aria-label="枚数">
+            <button type="button" id="qty-minus" aria-label="1枚減らす">−</button>
+            <output id="qty-out" aria-live="polite">1</output>
+            <button type="button" id="qty-plus" aria-label="1枚増やす">＋</button>
+          </div>
+          <p class="total">合計 <output id="ticket-total" aria-live="polite">¥12,000</output></p>
+        </div>
+        <div class="field">
+          <label for="t-name">お名前</label>
+          <input id="t-name" name="name" type="text" autocomplete="name" required>
+          <p class="err" id="t-name-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="t-mail">メールアドレス</label>
+          <input id="t-mail" name="email" type="email" autocomplete="email" required>
+          <p class="err" id="t-mail-err" role="alert"></p>
+        </div>
+        <button class="btn btn--primary" type="submit">申し込む <span class="arr" aria-hidden="true">→</span></button>
+        <p class="note">※ デザイン確認用のサンプルです。実際の購入手続きは行われません。</p>
+      </form>
+      <div class="ticket__done" id="ticket-done" hidden tabindex="-1">
+        <h3>お申し込みを受け付けました</h3>
+        <p id="ticket-summary"></p>
+        <p class="note">※ サンプル表示です。メールは送信されません。</p>
+        <button class="btn btn--sm" type="button" id="ticket-reset">続けて選ぶ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-detail" role="dialog" aria-modal="true" aria-labelledby="md-title" inert>
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__panel modal__panel--detail" tabindex="-1">
+    <button class="modal__close" type="button" data-modal-close aria-label="閉じる"><svg class="ico" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+    <div class="detail__media"><img id="md-img" src="" alt=""></div>
+    <div class="detail__body">
+      <p class="eyebrow" id="md-meta"></p>
+      <h2 class="modal__title" id="md-title"></h2>
+      <p class="detail__place" id="md-place"></p>
+      <p class="detail__desc" id="md-desc"></p>
+      <ul class="detail__list" id="md-list"></ul>
+      <div id="md-extra"></div>
+    </div>
+  </div>
+</div>
+
+<template id="tpl-artists">
+  <div class="artist-cols">
+    <section><h3>GREEN STAGE</h3><ul><li>Haruka Mizuno</li><li>KAZE-NO-KO</li><li>Sōta Ishikawa</li><li>The Greenroom Club</li></ul></section>
+    <section><h3>ORANGE STAGE</h3><ul><li>Rin Kuroda</li><li>SUNSET PARADE</li><li>Toma &amp; the Firefly</li><li>YUZU</li></ul></section>
+  </div>
+</template>
+<template id="tpl-sponsors">
+  <ul class="sponsor-grid">
+    <li><img src="images/sponsor-1.svg" alt="SUNRISE"></li>
+    <li><img src="images/sponsor-2.svg" alt="Coral &amp; Co."></li>
+    <li><img src="images/sponsor-3.svg" alt="Panora"></li>
+    <li><img src="images/sponsor-4.svg" alt="NOVA"></li>
+    <li><img src="images/sponsor-5.svg" alt="TERRA"></li>
+    <li><img src="images/sponsor-6.svg" alt="MERIDIAN"></li>
+  </ul>
+</template>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
